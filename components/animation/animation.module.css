@@ -1,4 +1,12 @@
 .animation {
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 100vw;
   background-color: black;
+}
+
+.animation img {
+  position: absolute;
 }

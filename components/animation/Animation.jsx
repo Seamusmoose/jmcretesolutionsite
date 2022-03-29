@@ -1,32 +1,31 @@
-import styles from "./animation.module.css";
 import Image from "next/image";
+import { useState } from "react";
 import { imageList } from "../../pages/brandImages";
+import styles from "./animation.module.css";
+
+const onHoverStyle = ({ onHover }) => ({
+  transform: onHover ? "transform 0.25s ease" : "none",
+});
 
 const Animation = () => {
+  const [onHover, setOnHover] = useState(false);
+
   return (
     <div className={styles.animation}>
-      {/* <Image src={imageList[0].src} width={500} height={500} />
-      <Image src={imageList[1].src} width={500} height={500} />
-      <Image src={imageList[2].src} width={500} height={500} />
-      <Image src={imageList[3].src} width={500} height={500} />
-      <Image src={imageList[4].src} width={500} height={500} />
-      <Image src={imageList[5].src} width={500} height={500} />
-      <Image src={imageList[6].src} width={500} height={500} />
-      <Image src={imageList[7].src} width={500} height={500} />
-      <Image src={imageList[8].src} width={500} height={500} /> */}
-
       {imageList.map((image, index) => {
-        {
-          console.log(image.src, "image");
-        }
-        <img
-          index={index}
-          key={image.id}
-          src={image.src}
-          alt={image.alt}
-          width={image.width}
-          height={image.width}
-        />;
+        return (
+          <img
+            style={onHoverStyle({ onHover })}
+            index={index}
+            key={image.id}
+            src={image.src}
+            alt={image.alt}
+            width={300}
+            height={300}
+            onMouseOver={() => setOnHover(true)}
+            onMouseOut={() => setOnHover(false)}
+          />
+        );
       })}
     </div>
   );
