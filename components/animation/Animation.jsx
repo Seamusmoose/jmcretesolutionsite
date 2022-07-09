@@ -34,18 +34,18 @@ const Animation = () => {
       </div> */}
 
       <div className={styles.cont}>
-        <div className={styles.one}>One</div>
-        <div className={styles.two}>two</div>
-        <div className={styles.three}>three</div>
-        <div className={styles.four}>four</div>
-        <div className={styles.five}>five</div>
-        <div className={styles.six}>six</div>
-        <div className={styles.seven}>six</div>
-        <div className={styles.eight}>six</div>
-        <div className={styles.nine}>six</div>
-        <div className={styles.ten}>six</div>
-        <div className={styles.eleven}>six</div>
-        <div className={styles.twelve}>six</div>
+        <div className={styles.one}></div>
+        <div className={styles.two}></div>
+        <div className={styles.three}></div>
+        <div className={styles.four}></div>
+        <div className={styles.five}></div>
+        <div className={styles.six}></div>
+        <div className={styles.seven}></div>
+        <div className={styles.eight}></div>
+        <div className={styles.nine}></div>
+        <div className={styles.ten}></div>
+        <div className={styles.eleven}></div>
+        <div className={styles.twelve}></div>
       </div>
     </div>
   );
