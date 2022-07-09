@@ -1,12 +1,181 @@
+/* .animationWrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+} */
+
 .animation {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 80vh;
   width: 100vw;
   background-color: black;
+  position: relative;
 }
 
 .animation img {
+  /* height: 200px;
+  width: 200px; */
+  /* position: absolute; */
   position: absolute;
 }
+
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 50vh;
+  width: 100vw;
+  position: relative;
+}
+
+.one {
+  height: 150px;
+  width: 150px;
+  clip-path: polygon(38% 14.3%, 47.8% 14.3%, 30% 48.1%, 20% 48.1%);
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+.two {
+  height: 150px;
+  width: 150px;
+  clip-path: polygon(49.8% 14.3%, 59.7% 14.3%, 41.9% 48.1%, 32% 48.1%);
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+.three {
+  height: 150px;
+  width: 150px;
+  clip-path: polygon(61.6% 14.3%, 71.5% 14.3%, 53.8% 48.1%, 43.9% 48.1%);
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+.four {
+  height: 150px;
+  width: 150px;
+  clip-path: polygon(68.2% 25.1%, 73.2% 15.5%, 90.1% 48.1%, 80.2% 48.1%);
+  background-color: rgb(215, 215, 215);
+  position: relative;
+}
+.five {
+  height: 150px;
+  width: 150px;
+  clip-path: polygon(62.1% 36.3%, 67% 27.3%, 78.2% 48.1%, 68.3% 48.1%);
+  background-color: rgb(215, 215, 215);
+  position: relative;
+}
+.six {
+  height: 150px;
+  width: 150px;
+  clip-path: polygon(56.2% 47.4%, 61% 38.1%, 66.3% 48.1%, 56.5% 48.1%);
+  background-color: rgb(215, 215, 215);
+  position: relative;
+}
+.seven {
+  height: 150px;
+  width: 150px;
+  clip-path: polygon(80.3% 49.2%, 90.1% 49.2%, 72.2% 82.9%, 62.4% 82.9%);
+  background-color: rgb(172, 172, 172);
+  position: relative;
+}
+.eight {
+  height: 150px;
+  width: 150px;
+  clip-path: polygon(68.3% 49.2%, 78.2% 49.2%, 60.3% 82.9%, 50.5% 82.9%);
+  background-color: rgb(172, 172, 172);
+  position: relative;
+}
+.nine {
+  height: 150px;
+  width: 150px;
+  clip-path: polygon(56.5% 49.2%, 66.3% 49.2%, 48.5% 82.9%, 38.5% 82.9%);
+  background-color: rgb(172, 172, 172);
+  position: relative;
+}
+.ten {
+  height: 150px;
+  width: 150px;
+  clip-path: polygon(20.1% 49.2%, 29.9% 49.2%, 42.1% 72.2%, 37% 81.8%);
+  background-color: rgb(125, 125, 125);
+  position: relative;
+}
+.eleven {
+  height: 150px;
+  width: 150px;
+  clip-path: polygon(32.1% 49.2%, 41.9% 49.2%, 48% 61%, 43.1% 70.1%);
+  background-color: rgb(125, 125, 125);
+  position: relative;
+}
+.twelve {
+  height: 80px;
+  width: 40px;
+  clip-path: polygon(43.9% 49.2%, 53.7% 49.2%, 54% 50%, 49.2% 59.2%);
+  background-color: rgb(125, 125, 125);
+  position: relative;
+}
+
+/* .animation img:first-child:hover {
+  position: absolute;
+  right: 1000px;
+}
+
+.animation img:nth-child(2):hover {
+  position: absolute;
+  right: 1000px;
+}
+
+.animation img:nth-child(3) {
+  position: absolute;
+  right: 1000px;
+}
+
+.animation img:nth-child(4):hover {
+  position: absolute;
+  right: 1000px;
+}
+
+.animation img:nth-child(5):hover {
+  position: absolute;
+  right: 1000px;
+}
+
+.animation img:nth-child(6):hover {
+  position: absolute;
+  right: 1000px;
+}
+
+.animation img:nth-child(7):hover {
+  position: absolute;
+  right: 1000px;
+}
+
+.animation img:nth-child(8):hover {
+  position: absolute;
+  right: 1000px;
+}
+
+.animation img:nth-child(9):hover {
+  position: absolute;
+  right: 1000px;
+}
+
+.animation img:nth-child(10):hover {
+  position: absolute;
+  right: 1000px;
+}
+
+.animation img:nth-child(11):hover {
+  position: absolute;
+  right: 200px;
+  top: 100px;
+}
+
+.animation img:nth-child(12) {
+  position: absolute;
+  right: 100px;
+} */

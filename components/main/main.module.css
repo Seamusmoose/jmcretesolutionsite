@@ -1,0 +1,13 @@
+.container {
+  margin: 0;
+  padding: 0;
+  background-color: #eeeeee;
+  height: 80vh;
+  width: 100vw;
+}
+
+.containerText {
+  background-color: #929aab;
+  height: 40vh;
+  width: 50vw;
+}
