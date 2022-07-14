@@ -14,26 +14,8 @@ const Animation = () => {
   const [onHover, setOnHover] = useState(false);
 
   return (
-    <div>
-      {/* <div className={styles.animation}>
-        {imageList.map((image, index) => {
-          return (
-            <img
-              style={onHoverStyle({ onHover })}
-              index={index}
-              key={image.id}
-              src={image.src}
-              alt={image.alt}
-              width={100}
-              height={100}
-              onMouseOver={() => setOnHover(true)}
-              onMouseOut={() => setOnHover(false)}
-            />
-          );
-        })}
-      </div> */}
-
-      <div className={styles.cont}>
+    <div className={styles.animation__container}>
+      <div className={styles.logo__container}>
         <div className={styles.one}></div>
         <div className={styles.two}></div>
         <div className={styles.three}></div>

@@ -24,13 +24,20 @@
   position: absolute;
 }
 
-.cont {
+.animation__container {
+  height: 100vh;
+  background-color: black;
+  display: grid;
+  place-content: center center;
+}
+
+.logo__container {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: black;
-  height: 100vh;
-  width: 100vw;
+  height: 30vh;
+  width: 10vw;
   position: relative;
 }
 
@@ -40,6 +47,7 @@
   clip-path: polygon(38% 14.3%, 47.8% 14.3%, 30% 48.1%, 20% 48.1%);
   background-color: rgb(255, 255, 255);
   position: absolute;
+  transition: all 0.8s ease;
 }
 .two {
   height: 200px;
@@ -47,6 +55,7 @@
   clip-path: polygon(49.8% 14.3%, 59.7% 14.3%, 41.9% 48.1%, 32% 48.1%);
   background-color: rgb(255, 255, 255);
   position: absolute;
+  transition: all 0.8s ease;
 }
 .three {
   height: 200px;
@@ -54,6 +63,7 @@
   clip-path: polygon(61.6% 14.3%, 71.5% 14.3%, 53.8% 48.1%, 43.9% 48.1%);
   background-color: rgb(255, 255, 255);
   position: absolute;
+  transition: all 0.8s ease;
 }
 .four {
   height: 200px;
@@ -61,6 +71,7 @@
   clip-path: polygon(68.2% 25.1%, 73.2% 15.5%, 90.1% 48.1%, 80.2% 48.1%);
   background-color: rgb(215, 215, 215);
   position: absolute;
+  transition: all 0.8s ease;
 }
 .five {
   height: 200px;
@@ -68,6 +79,7 @@
   clip-path: polygon(62.1% 36.3%, 67% 27.3%, 78.2% 48.1%, 68.3% 48.1%);
   background-color: rgb(215, 215, 215);
   position: absolute;
+  transition: all 0.8s ease;
 }
 .six {
   height: 200px;
@@ -75,6 +87,7 @@
   clip-path: polygon(56.2% 47.4%, 61% 38.1%, 66.3% 48.1%, 56.5% 48.1%);
   background-color: rgb(215, 215, 215);
   position: absolute;
+  transition: all 0.8s ease;
 }
 .seven {
   height: 200px;
@@ -82,6 +95,7 @@
   clip-path: polygon(80.3% 49.2%, 90.1% 49.2%, 72.2% 82.9%, 62.4% 82.9%);
   background-color: rgb(172, 172, 172);
   position: absolute;
+  transition: all 0.8s ease;
 }
 .eight {
   height: 200px;
@@ -89,6 +103,7 @@
   clip-path: polygon(68.3% 49.2%, 78.2% 49.2%, 60.3% 82.9%, 50.5% 82.9%);
   background-color: rgb(172, 172, 172);
   position: absolute;
+  transition: all 0.8s ease;
 }
 .nine {
   height: 200px;
@@ -96,6 +111,7 @@
   clip-path: polygon(56.5% 49.2%, 66.3% 49.2%, 48.5% 82.9%, 38.5% 82.9%);
   background-color: rgb(172, 172, 172);
   position: absolute;
+  transition: all 0.8s ease;
 }
 .ten {
   height: 200px;
@@ -103,6 +119,7 @@
   clip-path: polygon(20.1% 49.2%, 29.9% 49.2%, 42.1% 72.2%, 37% 81.8%);
   background-color: rgb(125, 125, 125);
   position: absolute;
+  transition: all 0.8s ease;
 }
 .eleven {
   height: 200px;
@@ -110,6 +127,7 @@
   clip-path: polygon(32.1% 49.2%, 41.9% 49.2%, 48% 61%, 43.1% 70.1%);
   background-color: rgb(125, 125, 125);
   position: absolute;
+  transition: all 0.8s ease;
 }
 .twelve {
   height: 200px;
@@ -117,73 +135,65 @@
   clip-path: polygon(43.9% 49.2%, 53.7% 49.2%, 54% 50%, 49.2% 59.2%);
   background-color: rgb(125, 125, 125);
   position: absolute;
+  transition: all 1000ms ease;
 }
 
-.twelve:hover {
-  background-color: red;
+.logo__container:hover > .one {
+  transform-style: preserve-3d;
+  transform: translate(-250px, -150px) rotate(90deg) translateZ(1px);
 }
 
-.eleven:hover {
-  background-color: blue;
-}
-
-/* .animation img:first-child:hover {
+.logo__container:hover > .two {
   position: absolute;
-  right: 1000px;
+  transform: translate(-150px, -100px) rotate(90deg) translateZ(1px);
 }
 
-.animation img:nth-child(2):hover {
+.logo__container:hover > .three {
   position: absolute;
-  right: 1000px;
+  transform: translate(-100px, -75px) rotate(90deg) translateZ(1px);
 }
 
-.animation img:nth-child(3) {
+.logo__container:hover > .four {
   position: absolute;
-  right: 1000px;
+  transform: translate(250px, -150px) rotate(90deg) translateZ(1px);
 }
 
-.animation img:nth-child(4):hover {
+.logo__container:hover > .five {
   position: absolute;
-  right: 1000px;
+  transform: translate(150px, -100px) rotate(90deg) translateZ(1px);
 }
 
-.animation img:nth-child(5):hover {
+.logo__container:hover > .six {
   position: absolute;
-  right: 1000px;
+  transform: translate(100px, -75px) rotate(90deg) translateZ(1px);
 }
 
-.animation img:nth-child(6):hover {
+.logo__container:hover > .seven {
   position: absolute;
-  right: 1000px;
+  transform: translate(250px, 150px) rotate(90deg) translateZ(1px);
 }
 
-.animation img:nth-child(7):hover {
+.logo__container:hover > .eight {
   position: absolute;
-  right: 1000px;
+  transform: translate(150px, 100px) rotate(90deg) translateZ(1px);
 }
 
-.animation img:nth-child(8):hover {
+.logo__container:hover > .nine {
   position: absolute;
-  right: 1000px;
+  transform: translate(100px, 75px) rotate(90deg) translateZ(1px);
 }
 
-.animation img:nth-child(9):hover {
+.logo__container:hover > .ten {
   position: absolute;
-  right: 1000px;
+  transform: translate(-250px, 150px) rotate(90deg) translateZ(1px);
 }
 
-.animation img:nth-child(10):hover {
+.logo__container:hover > .eleven {
   position: absolute;
-  right: 1000px;
+  transform: translate(-150px, 100px) rotate(90deg) translateZ(1px);
 }
 
-.animation img:nth-child(11):hover {
+.logo__container:hover > .twelve {
   position: absolute;
-  right: 200px;
-  top: 100px;
+  transform: translate(-100px, 75px) rotate(90deg) translateZ(1px);
 }
-
-.animation img:nth-child(12) {
-  position: absolute;
-  right: 100px;
-} */
