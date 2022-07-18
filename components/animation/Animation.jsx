@@ -1,18 +1,6 @@
-import Image from "next/image";
-import { useState } from "react";
-import { imageList } from "../../pages/brandImages";
 import styles from "./animation.module.css";
-import fullTitle from "../../public/white_logo_dark_background.jpg";
-import logoIcon from "../../public/logo.png";
-
-const onHoverStyle = ({ onHover }) => ({
-  // transform: onHover ? "transform 0.25s ease" : "none",
-  // position: onHover ? "absolute" : "none",
-});
 
 const Animation = () => {
-  const [onHover, setOnHover] = useState(false);
-
   return (
     <div className={styles.animation__container}>
       <div className={styles.logo__container}>
@@ -34,17 +22,3 @@ const Animation = () => {
 };
 
 export default Animation;
-
-// const [logo, setLogo] = useState(false);
-
-// return (
-//   <div className={styles.animationWrapper}>
-//     <Image
-//       src={logo ? fullTitle : logoIcon}
-//       height={300}
-//       width={logo ? 900 : 300}
-//       onMouseEnter={() => setLogo(true)}
-//       onMouseOut={() => setLogo(false)}
-//     />
-//   </div>
-// );

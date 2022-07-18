@@ -1,4 +1,4 @@
-export const imageList = [
+export const galleryImageList = [
   { id: 1, src: "/1.png", path: 1, alt: "image" },
   { id: 2, src: "/2.png", path: 2, alt: "image" },
   { id: 3, src: "/3.png", path: 3, alt: "image" },
