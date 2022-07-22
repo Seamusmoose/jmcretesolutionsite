@@ -1,4 +1,4 @@
 .test {
-  height: 80px;
+max-width: fit-content;
   background-color: blue;
 }

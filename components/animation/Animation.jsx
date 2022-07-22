@@ -17,6 +17,9 @@ const Animation = () => {
         <div className={styles.eleven}></div>
         <div className={styles.twelve}></div>
       </div>
+      {/* <div>
+        <a className={styles.scroll}>Scroll Down</a>
+      </div> */}
     </div>
   );
 };

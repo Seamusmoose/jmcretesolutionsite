@@ -2,6 +2,7 @@ import styles from "./main.module.css";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Character from "../../public/urban-line-builder-in-helmet-holds-drawing.png";
+import headerLogo from "../../public/white_logo_transparent_background.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -12,17 +13,31 @@ const Main = () => {
 
   return (
     <div className={styles.container__layout}>
+      <div data-aos="fade-right" className={styles.contact}>
+        <a>Contact</a>
+        <div>
+          <a>Email: jmcretesolutions@gmail.com</a>
+          <a>Phone: 0422 293 113</a>
+        </div>
+      </div>
       <div className={styles.image__container} data-aos="flip-left">
         <Image
           src={Character}
-          height={450}
-          width={250}
+          height={320}
+          width={190}
           layout="intrinsic"
           priority
         />
       </div>
       <div className={styles.container__text}>
-        <h1 data-aos="fade-left">Welcome to JMCrete Solutions. </h1>
+        <Image
+          data-aos="fade-left"
+          src={headerLogo}
+          height={100}
+          width={350}
+          layout="intrinsic"
+          priority
+        />
         <p data-aos="fade-left">
           We are a concreting business located in Indooroopilly servicing the
           greater Brisbane area. We cover all areas from North Brisbane to Gold
