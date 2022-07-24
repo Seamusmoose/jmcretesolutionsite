@@ -26,6 +26,7 @@ const Main = () => {
           height={320}
           width={190}
           layout="intrinsic"
+          alt="Concrete-Character"
           priority
         />
       </div>
@@ -36,6 +37,7 @@ const Main = () => {
           height={100}
           width={350}
           layout="intrinsic"
+          alt="header-logo"
           priority
         />
         <p data-aos="fade-left">
