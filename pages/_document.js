@@ -10,11 +10,7 @@ class MyDocument extends Document {
             content="width=device-width, initial-scale=1.0"
           ></meta>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossorigin="anonymous"
-          />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
             rel="stylesheet"
