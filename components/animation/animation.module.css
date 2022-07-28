@@ -292,15 +292,18 @@
   }
 
   .menu a {
-    display: none;
+    display: block;
     pointer-events: none;
     touch-action: none;
     -ms-touch-action: none;
     opacity: 0;
+    -webkit-transition: opacity 2s;
+    -webkit-transition: -webkit-opacity 2s;
+    transition: opacity 2s;
   }
 
-  .logo__container:hover .menu > a {
+  .logo__container:hover .menu a {
     opacity: 1;
-    display: block;
+    /* display: inline-block; */
   }
 }
