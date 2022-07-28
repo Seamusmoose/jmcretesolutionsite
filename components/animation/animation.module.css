@@ -53,10 +53,27 @@
 .logo__container {
   overflow: hidden;
   display: flex;
+  display: flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+
   justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+
   align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+
   background-color: black;
   padding: 15rem;
+
   -webkit-transition: all 1000ms ease;
   -moz-transition: all 1000ms ease;
   -ms-transition: all 1000ms ease;
@@ -275,22 +292,15 @@
   }
 
   .menu a {
-    display: inline-block;
+    display: none;
     pointer-events: none;
     touch-action: none;
     -ms-touch-action: none;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
     opacity: 0;
   }
 
-  /* .menu:hover a {
-    opacity: 1;
-  } */
-
   .logo__container:hover .menu > a {
     opacity: 1;
+    display: block;
   }
 }

@@ -1,35 +1,38 @@
+.main__container {
+  background-color: black;
+  padding: 1rem;
+}
+
 .container__layout {
-  /* display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(7, 1fr); */
   background-color: grey;
   padding: 9.5rem;
   max-width: 100vw;
-  margin: 100px;
+  margin: 40px;
   border: solid 1px transparent;
   border-radius: 25px;
 }
 
 .container__text {
+  margin-top: -80px;
   color: white;
   padding: 8rem;
   font-size: 1.8rem;
 }
 
 .image__container {
+  margin-top: -80px;
   display: grid;
   place-items: center center;
-  /* background-color: darkgrey; */
   float: left;
   width: 400px;
   height: 400px;
-  /* padding: 4rem; */
   border-radius: 60%;
   shape-outside: circle(40%);
   margin-right: 6rem;
   opacity: 1;
 }
 .contact {
+  margin-top: -30px;
   color: white;
   font-size: 2rem;
   padding: 2rem;
@@ -52,7 +55,6 @@
   display: inline-block;
   transition: 0.7s;
   opacity: 0;
-  /* transform: rotate(180deg); */
 }
 
 @media screen and (max-width: 700px) {
@@ -62,12 +64,16 @@
     width: 0px;
   }
 
+
   .container__layout {
+    margin: 0 auto;
+    padding: 5rem;
     display: grid;
-    justify-content: center;
+    place-content: center center;
   }
 
   .contact {
+    margin-bottom: 60px;
     padding-top: 0;
     display: grid;
     place-content: center center;
@@ -78,4 +84,3 @@
     padding-top: 0;
   }
 }
-
