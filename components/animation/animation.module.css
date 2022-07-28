@@ -19,14 +19,49 @@
   place-content: center center;
 }
 
+.menu {
+  width: 600px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.menu a {
+  padding: 4rem;
+  font-size: 20px;
+  color: white;
+  transition: opacity 1.4s;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.menu:hover a {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.phoneMenu {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.8rem;
+  color: white;
+  opacity: 0;
+  pointer-events: auto;
+}
+
 .logo__container {
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: black;
-  height: 30vh;
-  width: 10vw;
-  position: relative;
+  padding: 15rem;
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 1000ms ease;
+  -ms-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease;
 }
 
 .one {
@@ -174,17 +209,6 @@
   transition: all 1000ms ease;
 }
 
-/* .scroll {
-  color: white;
-  padding-top: 5rem;
-  font-size: 2.5rem;
-  opacity: 0;
-}
-
-.logo__container:hover .scroll {
-  opacity: 1;
-} */
-
 .logo__container:hover > .one {
   transform-style: preserve-3d;
   transform: translate(-250px, -150px) rotate(90deg) translateZ(1px);
@@ -245,3 +269,28 @@
   transform: translate(-100px, 75px) rotate(90deg) translateZ(1px);
 }
 
+@media screen and (max-width: 700px) {
+  .logo__container {
+    padding: 12rem;
+  }
+
+  .menu a {
+    display: inline-block;
+    pointer-events: none;
+    touch-action: none;
+    -ms-touch-action: none;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    opacity: 0;
+  }
+
+  /* .menu:hover a {
+    opacity: 1;
+  } */
+
+  .logo__container:hover .menu > a {
+    opacity: 1;
+  }
+}

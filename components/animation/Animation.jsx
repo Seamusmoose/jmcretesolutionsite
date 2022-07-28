@@ -16,10 +16,16 @@ const Animation = () => {
         <div className={styles.ten}></div>
         <div className={styles.eleven}></div>
         <div className={styles.twelve}></div>
+
+        <div className={styles.menu}>
+          <a href="#main">About</a>
+          <a href="#gallery">Gallery</a>
+        </div>
       </div>
-      {/* <div>
-        <a className={styles.scroll}>Scroll Down</a>
-      </div> */}
+      <div className={styles.phoneMenu}>
+        <a href="#main">main</a>
+        <a href="#gallery">gallery</a>
+      </div>
     </div>
   );
 };

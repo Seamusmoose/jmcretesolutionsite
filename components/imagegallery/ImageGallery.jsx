@@ -5,7 +5,7 @@ import Image from "next/image";
 const ImageGallery = () => {
   return (
     <div className={styles.test}>
-      <div className={styles.grid__layout}>
+      <div id="gallery" className={styles.grid__layout}>
         {["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"].map(
           (path) => {
             return (

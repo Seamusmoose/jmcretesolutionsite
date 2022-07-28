@@ -20,7 +20,7 @@ const Main = () => {
           <a>Phone: 0422 293 113</a>
         </div>
       </div>
-      <div className={styles.image__container} data-aos="flip-left">
+      <div id="main" className={styles.image__container} data-aos="flip-left">
         <Image
           src={Character}
           height={320}
