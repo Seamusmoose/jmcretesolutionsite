@@ -13,8 +13,9 @@ const Main = () => {
 
   return (
     <div className={styles.main__container}>
+      <div id="main"></div>
       <div className={styles.container__layout}>
-        <div id="main" data-aos="fade-right" className={styles.contact}>
+        <div data-aos="fade-right" className={styles.contact}>
           <a>Contact</a>
           <div>
             <a>Email: jmcretesolutions@gmail.com</a>
