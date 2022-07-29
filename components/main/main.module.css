@@ -74,12 +74,15 @@
   .contact {
     margin-bottom: 60px;
     padding-top: 0;
-    display: grid;
-    place-content: center center;
+    padding-left: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     width: 120vw;
   }
 
   .container__text {
-    padding-top: 0;
+    margin-inline: 50px;
+    padding-top: 20px;
   }
 }
