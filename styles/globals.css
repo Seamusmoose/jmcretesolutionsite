@@ -8,6 +8,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   font-family: "Quicksand", sans-serif;
   font-size: 62.5%;
+  background-color: black;
 }
 
 a {
@@ -18,4 +19,9 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.containerMain {
+  width: 90%;
+  margin: 0 auto;
 }
